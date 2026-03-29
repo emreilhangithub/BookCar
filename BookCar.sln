@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{35907271-30D7-415C-A964-E0D966CD812D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCar.Domain", "Core\BookCar.Domain\BookCar.Domain.csproj", "{05919849-1835-4C7C-B00C-72194E2FDB37}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05919849-1835-4C7C-B00C-72194E2FDB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05919849-1835-4C7C-B00C-72194E2FDB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05919849-1835-4C7C-B00C-72194E2FDB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05919849-1835-4C7C-B00C-72194E2FDB37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05919849-1835-4C7C-B00C-72194E2FDB37} = {35907271-30D7-415C-A964-E0D966CD812D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51F3C416-D738-4F7F-A39A-39E8B962942F}
