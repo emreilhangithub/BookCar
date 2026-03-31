@@ -23,4 +23,8 @@
     <ProjectReference Include="..\..\Core\BookCar.Domain\BookCar.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>
