@@ -5,11 +5,11 @@ using BookCar.Domain.Entities;
 
 namespace BookCar.Application.Features.CQRS.Handlers.AboutHandlers
 {
-    public class GetAboutQueryByIdHandler
+    public class GetAboutByIdQueryHandler
     {
         private readonly IRepository<About> _repository;
 
-        public GetAboutQueryByIdHandler(IRepository<About> repository)
+        public GetAboutByIdQueryHandler(IRepository<About> repository)
         {
             _repository = repository;
         }
