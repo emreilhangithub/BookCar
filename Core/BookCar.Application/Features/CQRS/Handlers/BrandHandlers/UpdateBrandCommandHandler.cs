@@ -1,0 +1,23 @@
+﻿using BookCar.Application.Features.CQRS.Commands.BrandCommands;
+using BookCar.Application.Interfaces;
+using BookCar.Domain.Entities;
+
+namespace BookCar.Application.Features.CQRS.Handlers.BrandHandlers
+{
+    public class UpdateBrandCommandHandler
+    {
+        private readonly IRepository<Brand> _repository;
+
+        public UpdateBrandCommandHandler(IRepository<Brand> repository)
+        {
+            _repository = repository;
+        }
+
+        public async Task Handle(UpdateBrandCommand command)
+        {
+            var values = await _repository.GetByIdAsync(command.BrandID);
+            values.Name = command.Name;
+            await _repository.UpdateAsync(values);
+        }
+    }
+}

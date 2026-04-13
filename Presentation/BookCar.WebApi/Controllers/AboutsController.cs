@@ -1,9 +1,7 @@
 ﻿using BookCar.Application.Features.CQRS.Commands.AboutCommands;
 using BookCar.Application.Features.CQRS.Handlers.AboutHandlers;
 using BookCar.Application.Features.CQRS.Queries.AboutQueries;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BookCar.WebApi.Controllers
 {
